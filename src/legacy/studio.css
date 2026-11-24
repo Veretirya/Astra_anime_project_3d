@@ -1,0 +1,274 @@
+html[data-game="kinema"]{font-family:Manrope,Arial,sans-serif;color:#edf0e9;background:#141613;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;--bg:#141613;--panel:#1c1f1b;--line:#32362f;--muted:#949b90;--dim:#737d70;--lime:#c2ee92;--mono:'Plex Mono','Courier New',monospace;color-scheme:dark}
+html[data-game="kinema"] *{box-sizing:border-box}
+html[data-game="kinema"] body{margin:0;min-width:320px}
+html[data-game="kinema"] button,html[data-game="kinema"] a,html[data-game="kinema"] input{font:inherit}
+html[data-game="kinema"] button,html[data-game="kinema"] a{ -webkit-tap-highlight-color:transparent}
+html[data-game="kinema"] button{cursor:pointer;color:inherit;border:0;background:none;user-select:none}
+html[data-game="kinema"] button:disabled,html[data-game="kinema"] a[aria-disabled=true]{cursor:not-allowed;opacity:.45}
+html[data-game="kinema"] button:focus-visible,html[data-game="kinema"] a:focus-visible,html[data-game="kinema"] input:focus-visible,html[data-game="kinema"] canvas:focus-visible{outline:2px solid var(--lime);outline-offset:4px}
+html[data-game="kinema"] button{transition:background .16s,color .16s,border-color .16s,box-shadow .16s,transform .16s}
+html[data-game="kinema"] button:active:not(:disabled){transform:translateY(1px)}
+html[data-game="kinema"] svg{flex-shrink:0;stroke-width:1.65}
+html[data-game="kinema"] a{color:inherit;text-decoration:none}
+html[data-game="kinema"] ::selection{background:#c2ee9240;color:#f6ffec}
+html[data-game="kinema"] ::-webkit-scrollbar{width:5px;height:5px}
+html[data-game="kinema"] ::-webkit-scrollbar-thumb{background:#434b3f;border-radius:5px}
+html[data-game="kinema"] .app-shell{min-height:100dvh;display:flex;flex-direction:column}
+html[data-game="kinema"] .topbar{height:67px;flex-shrink:0;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 32px;gap:28px;background:#161814;position:relative;z-index:10}
+html[data-game="kinema"] .brand{display:flex;align-items:center;gap:10px;white-space:nowrap;letter-spacing:-1.65px;font-size:29px;font-weight:800;line-height:1}
+html[data-game="kinema"] .brand-mark{color:var(--lime);width:29px;height:31px;margin-right:1px}
+html[data-game="kinema"] .brand-dot{color:var(--lime)}
+html[data-game="kinema"] .brand b{font:10px var(--mono);letter-spacing:1.4px;color:#b6c2a8;margin:3px 0 0 1px;border:1px solid #48503f;padding:3px 5px;border-radius:3px}
+html[data-game="kinema"] .nav-divider,html[data-game="kinema"] .meta-rule,html[data-game="kinema"] .tiny-rule,html[data-game="kinema"] .transport-rule,html[data-game="kinema"] .status-divider{display:block;width:1px;background:var(--line)}
+html[data-game="kinema"] .nav-divider{height:23px;margin-left:2px}
+html[data-game="kinema"] .main-nav{height:100%;display:flex;align-items:stretch;gap:6px}
+html[data-game="kinema"] .main-nav button{display:flex;align-items:center;gap:9px;position:relative;padding:0 14px;font-size:13px;font-weight:600;color:#999f93}
+html[data-game="kinema"] .main-nav button:hover{color:#e8eddf;background:#ffffff03}
+html[data-game="kinema"] .main-nav button.active{color:#e6eedf}
+html[data-game="kinema"] .main-nav button.active svg{color:var(--lime)}
+html[data-game="kinema"] .main-nav button.active:after{position:absolute;content:'';height:2px;background:var(--lime);left:13px;right:13px;bottom:0}
+html[data-game="kinema"] .header-meta{margin-left:auto;display:flex;gap:18px;align-items:center}
+html[data-game="kinema"] .local-status{display:flex;align-items:center;gap:9px;font-size:11px;letter-spacing:.1px;color:#b5bcaf}
+html[data-game="kinema"] .status-dot{width:6px;height:6px;border-radius:50%;background:var(--lime);display:inline-block;flex-shrink:0}
+html[data-game="kinema"] .status-dot.idle{background:#b0aaa0}
+html[data-game="kinema"] .version{font:10px var(--mono);color:#87907f;border:1px solid #363c32;padding:3px 6px;border-radius:4px}
+html[data-game="kinema"] .meta-rule{height:19px}
+html[data-game="kinema"] .icon-button{display:inline-flex;align-items:center;justify-content:center;width:29px;height:29px;border-radius:5px;color:#aab3a3;flex-shrink:0}
+html[data-game="kinema"] .icon-button:hover{background:#ffffff09;color:#f1f5ed}
+html[data-game="kinema"] .workspace-main{width:100%;max-width:1920px;margin:0 auto;flex:1;padding:28px 32px 0}
+html[data-game="kinema"] .page-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:25px;animation:kinema-arrive .5s ease-out both}
+html[data-game="kinema"] .eyebrow,html[data-game="kinema"] .micro-label,html[data-game="kinema"] .panel-number,html[data-game="kinema"] .caption-kicker,html[data-game="kinema"] .caption-sub,html[data-game="kinema"] .fps,html[data-game="kinema"] .live-label,html[data-game="kinema"] .timecode,html[data-game="kinema"] .speed-button,html[data-game="kinema"] .range-marks,html[data-game="kinema"] .gravity-number,html[data-game="kinema"] .statusbar,html[data-game="kinema"] .save-details{font-family:var(--mono)}
+html[data-game="kinema"] .eyebrow{display:flex;align-items:center;gap:9px;color:#a3ad99;font-size:9px;line-height:14px;letter-spacing:1.8px}
+html[data-game="kinema"] .eyebrow i{width:18px;height:2px;background:var(--lime);display:inline-block}
+html[data-game="kinema"] .page-heading h1{font-size:clamp(28px,2.3vw,38px);line-height:1.24;letter-spacing:-1.45px;font-weight:700;margin:6px 0 6px}
+html[data-game="kinema"] .page-heading p{font-size:12.5px;color:var(--muted);line-height:1.5;margin:0;letter-spacing:.02px}
+html[data-game="kinema"] .heading-actions{display:flex;align-items:center;gap:17px;margin-top:10px}
+html[data-game="kinema"] .quiet-action,html[data-game="kinema"] .button{display:inline-flex;align-items:center;justify-content:center;gap:9px;white-space:nowrap;font-size:12px;font-weight:600;line-height:1.3}
+html[data-game="kinema"] .quiet-action{color:#abb3a5;padding:9px 3px}
+html[data-game="kinema"] .quiet-action:hover{color:white}
+html[data-game="kinema"] .button{min-height:37px;padding:9px 14px;border:1px solid transparent;border-radius:6px}
+html[data-game="kinema"] .button.secondary{background:#242821;border-color:#3b4236;color:#e1e6db}
+html[data-game="kinema"] .button.secondary:hover{background:#30372a;border-color:#5a6651}
+html[data-game="kinema"] .button.primary{background:var(--lime);color:#202c16;border-color:#c2ee92}
+html[data-game="kinema"] .button.primary:hover,html[data-game="kinema"] .play-button:hover{background:#d1ffa3;box-shadow:0 0 20px #b6e58010}
+html[data-game="kinema"] .workspace-grid{display:grid;grid-template-columns:minmax(0,1fr) clamp(278px,22.2vw,340px);gap:18px;align-items:stretch;height:max(551px,calc(100dvh - 277px));max-height:1000px}
+html[data-game="kinema"] .viewport-frame,html[data-game="kinema"] .inspector{border:1px solid #363c32;border-radius:10px;min-width:0;background:var(--panel)}
+html[data-game="kinema"] .viewport-frame{display:flex;flex-direction:column;position:relative;isolation:isolate;overflow:hidden;animation:kinema-arrive .55s .04s ease-out both}
+html[data-game="kinema"] .viewport-header,html[data-game="kinema"] .inspector-header{height:43px;flex-shrink:0;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 17px;background:#1d201b}
+html[data-game="kinema"] .viewport-title,html[data-game="kinema"] .inspector-header>span:first-child{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:.07px}
+html[data-game="kinema"] .viewport-title>svg{color:#bbc3b4}
+html[data-game="kinema"] .viewport-health{display:flex;align-items:center;gap:14px}
+html[data-game="kinema"] .live-label{display:flex;align-items:center;gap:6px;color:var(--lime);font-size:9px;font-weight:500;letter-spacing:1.3px}
+html[data-game="kinema"] .live-label i{width:5px;height:5px;border-radius:50%;background:var(--lime);box-shadow:0 0 6px #b5f18230;animation:kinema-heartbeat 4s ease-in-out infinite}
+html[data-game="kinema"] .live-label.inactive{color:#acb0a8}html[data-game="kinema"] .live-label.inactive i{background:#a9afa4;animation:none}
+html[data-game="kinema"] .fps{color:#929d8a;font-size:10px;min-width:39px;text-align:right;letter-spacing:.1px}
+html[data-game="kinema"] .tiny-rule{height:14px;margin:0 -5px 0 -2px}
+html[data-game="kinema"] .viewport-health .icon-button{width:22px;height:24px}
+html[data-game="kinema"] .scene-area{flex:1;min-height:0;position:relative;overflow:hidden;background:#353d36 url('../assets/scene-poster.jpg?inline') center center / cover no-repeat;isolation:isolate}
+html[data-game="kinema"] .three-host{position:absolute;inset:0;opacity:0;transition:opacity .55s ease;z-index:0}
+html[data-game="kinema"] .three-host.loaded{opacity:1}
+html[data-game="kinema"] .studio-canvas{height:100%;width:100%;display:block;touch-action:none;outline:0!important}
+html[data-game="kinema"] .three-host[data-tool=grab],html[data-game="kinema"] .three-host[data-tool=orbit]{cursor:grab}
+html[data-game="kinema"] .three-host[data-dragging=true]{cursor:grabbing}
+html[data-game="kinema"] .three-host[data-tool=move]{cursor:move}
+html[data-game="kinema"] .view-pick{position:absolute;top:17px;left:18px;z-index:5}
+html[data-game="kinema"] .view-button{display:flex;gap:7px;align-items:center;height:28px;padding:0 10px;background:#252b24d9;border:1px solid #717b6547;border-radius:5px;color:#d6ddd0;font-size:10px;font-weight:500;backdrop-filter:blur(8px)}
+html[data-game="kinema"] .view-button:hover,html[data-game="kinema"] .shot-button:hover{background:#333a30;border-color:#7e8b75}
+html[data-game="kinema"] .view-button>svg:first-child{color:#b7c2b0}
+html[data-game="kinema"] .axis-gizmo{position:absolute;right:13px;top:10px;width:61px;height:61px;pointer-events:none;opacity:.93}
+html[data-game="kinema"] .scene-tools{position:absolute;left:18px;top:50%;transform:translateY(-57%);display:flex;align-items:center;flex-direction:column;gap:3px;padding:4px;border:1px solid #68715f55;border-radius:7px;background:#222720cf;backdrop-filter:blur(12px);z-index:3}
+html[data-game="kinema"] .scene-tools>button{height:32px;width:32px;display:flex;align-items:center;justify-content:center;border-radius:4px;color:#b9c2b1;position:relative}
+html[data-game="kinema"] .scene-tools>button:hover{color:#efffe1;background:#ffffff0b}
+html[data-game="kinema"] .scene-tools>button.selected{background:var(--lime);color:#29371d;box-shadow:0 1px 3px #131b0e40}
+html[data-game="kinema"] .tool-tip{position:absolute;left:calc(100% + 11px);display:flex;align-items:center;gap:18px;background:#222620;border:1px solid #515b49;border-radius:4px;padding:6px 9px;font-size:10px;line-height:1.45;color:#d7dfd0;pointer-events:none;opacity:0;transform:translateX(-3px);transition:opacity .15s,transform .15s;white-space:nowrap}
+html[data-game="kinema"] .scene-tools button:hover .tool-tip,html[data-game="kinema"] .scene-tools button:focus-visible .tool-tip{opacity:1;transform:translateX(0)}
+html[data-game="kinema"] .tool-tip kbd{font:9px var(--mono);color:#98a78b}
+html[data-game="kinema"] .tool-separator{width:22px;height:1px;background:#59614f70;margin:2px 0}
+html[data-game="kinema"] .character-caption{position:absolute;bottom:25px;left:24px;pointer-events:none;user-select:none;animation:kinema-caption-in .75s .14s both}
+html[data-game="kinema"] .caption-kicker{font-size:8px;line-height:14px;color:#bac5b0;letter-spacing:1.7px;display:flex;align-items:center;gap:7px}
+html[data-game="kinema"] .caption-kicker i{width:13px;height:2px;background:#bbd89f}
+html[data-game="kinema"] .character-name{display:flex;align-items:center;gap:13px;font-size:clamp(32px,3.1vw,50px);font-weight:600;letter-spacing:-2.35px;line-height:1.2;color:#f1f4ed;margin:3px 0}
+html[data-game="kinema"] .character-name>span{font-size:17px;font-family:Arial,sans-serif;font-weight:400;letter-spacing:0;color:#c3cdb78c;margin:4px 0 0}
+html[data-game="kinema"] .caption-sub{display:flex;align-items:center;gap:6px;font-size:9px;color:#b4bdae;letter-spacing:.3px}
+html[data-game="kinema"] .caption-sub>span{border:1px solid #afbaa4;width:4px;height:4px;transform:rotate(45deg)}
+html[data-game="kinema"] .shot-button{position:absolute;right:18px;bottom:19px;width:29px;height:29px;border:1px solid #6d77614d;background:#252b24b3;border-radius:5px;display:grid;place-items:center;color:#c5cfbc}
+html[data-game="kinema"] .transport{min-height:57px;display:flex;align-items:center;padding:9px 15px;gap:10px;border-top:1px solid #42483d;background:#1d201b;position:relative;z-index:4}
+html[data-game="kinema"] .play-button{height:32px;min-width:85px;padding:0 14px;display:flex;align-items:center;justify-content:center;gap:7px;border-radius:5px;color:#25331a;background:var(--lime);font-size:12px;font-weight:700}
+html[data-game="kinema"] .transport-rule{height:17px;margin-right:4px}
+html[data-game="kinema"] .timecode{font-size:12px;color:#cbd3c4;letter-spacing:.65px;font-variant-numeric:tabular-nums}
+html[data-game="kinema"] .speed-picker{position:relative;margin-left:3px}
+html[data-game="kinema"] .speed-button{display:flex;align-items:center;justify-content:center;gap:7px;font-size:10px;padding:4px 7px;color:#a4ae9c;border-radius:4px}
+html[data-game="kinema"] .speed-button:hover{background:#343d2e;color:#d3dec9}
+html[data-game="kinema"] .transport-state{display:flex;align-items:center;gap:8px;color:#aab69e;font-size:10px;letter-spacing:.1px;margin-left:auto}
+html[data-game="kinema"] .transport-state .status-dot{height:5px;width:5px;background:#9cbb80}
+html[data-game="kinema"] .inspector{display:flex;flex-direction:column;overflow:auto;animation:kinema-arrive .55s .09s ease-out both}
+html[data-game="kinema"] .inspector-header{padding:0 19px;line-height:1}
+html[data-game="kinema"] .inspector-header>span:first-child{font-size:14px;font-weight:600;gap:9px}
+html[data-game="kinema"] .inspector-header svg{color:#b1bba7}
+html[data-game="kinema"] .panel-number{color:#788371;font-size:8px;letter-spacing:1.1px}
+html[data-game="kinema"] .character-section{padding:17px 19px 17px;border-bottom:1px solid var(--line)}
+html[data-game="kinema"] .micro-label{font-size:8px;letter-spacing:1.45px;line-height:1.5;color:#909b85}
+html[data-game="kinema"] .model-select{padding:0;display:flex;align-items:center;gap:13px;width:100%;text-align:left;margin-top:10px;border-radius:6px}
+html[data-game="kinema"] .model-select:hover .model-info strong{color:var(--lime)}
+html[data-game="kinema"] .model-select>svg{color:#88947e;margin-left:auto}
+html[data-game="kinema"] .model-avatar{width:46px;height:48px;object-fit:cover;border:1px solid #626953;border-radius:7px;background:#505447}
+html[data-game="kinema"] .model-info{display:flex;flex-direction:column;gap:4px}
+html[data-game="kinema"] .model-info strong{font-size:18px;letter-spacing:-.55px;font-weight:650;line-height:1.25;transition:color .2s}
+html[data-game="kinema"] .model-info>span{font-size:10px;display:flex;align-items:center;gap:6px;color:#a1ae95}
+html[data-game="kinema"] .model-info .status-dot{width:4px;height:4px;background:#a7c18d}
+html[data-game="kinema"] .inspector-section{padding:0 19px;border-bottom:1px solid var(--line)}
+html[data-game="kinema"] .section-heading{display:flex;align-items:center;justify-content:space-between;width:100%;padding:17px 0 0;line-height:20px}
+html[data-game="kinema"] .section-heading[aria-expanded=false]{padding-bottom:17px}
+html[data-game="kinema"] .section-heading>span{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:650;letter-spacing:.05px}
+html[data-game="kinema"] .section-heading>span>svg{color:#acb6a1}
+html[data-game="kinema"] .chevron{color:#919c87;transition:transform .2s}
+html[data-game="kinema"] .chevron.closed{transform:rotate(-90deg)}
+html[data-game="kinema"] .section-content{padding:14px 0 16px;animation:kinema-section-in .2s ease}
+html[data-game="kinema"] .setting-row{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:20px;font-size:12px;color:#d3dacd;line-height:1.5}
+html[data-game="kinema"] .setting-row+.setting-row{margin-top:14px}
+html[data-game="kinema"] .setting-with-icon{display:flex;align-items:center;gap:9px}
+html[data-game="kinema"] .setting-with-icon>svg{color:#939f88}
+html[data-game="kinema"] .toggle{width:29px;height:16px;background:#40463c;flex-shrink:0;border:1px solid #4a5243;border-radius:20px;position:relative;padding:0}
+html[data-game="kinema"] .toggle>span{position:absolute;top:2px;left:2px;width:10px;height:10px;background:#b5beb0;border-radius:50%;box-shadow:0 1px 3px #0003;transition:transform .2s,background .2s}
+html[data-game="kinema"] .toggle.on{background:#b8e48d;border-color:#b8e48d}
+html[data-game="kinema"] .toggle.on>span{transform:translateX(13px);background:#29351f}
+html[data-game="kinema"] .toggle:hover{filter:brightness(1.13)}
+html[data-game="kinema"] .gravity-control{margin-top:10px;transition:opacity .2s}
+html[data-game="kinema"] .gravity-control.disabled{opacity:.4}
+html[data-game="kinema"] .gravity-value{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+html[data-game="kinema"] .planet-pick{position:relative}
+html[data-game="kinema"] .planet-pick>button{display:flex;align-items:center;gap:5px;color:#afb9a7;font-size:10px;padding:1px 0}
+html[data-game="kinema"] .planet-pick>button:hover{color:var(--lime)}
+html[data-game="kinema"] .gravity-number{font-size:11px;color:#dae4d0;letter-spacing:.2px}
+html[data-game="kinema"] .gravity-number small{font-size:9px;color:#9daa92}
+html[data-game="kinema"] input[type=range]{appearance:none;-webkit-appearance:none;display:block;width:100%;height:15px;cursor:pointer;background:transparent;margin:0;accent-color:var(--lime)}
+html[data-game="kinema"] input[type=range]::-webkit-slider-runnable-track{height:3px;border-radius:4px;background:linear-gradient(to right,#b9df95 0%,#b9df95 var(--fill),#424a3b var(--fill),#424a3b 100%)}
+html[data-game="kinema"] input[type=range]::-webkit-slider-thumb{appearance:none;width:9px;height:9px;margin-top:-3px;background:#c8ef9e;border-radius:50%;border:0;box-shadow:0 0 0 3px #c1ec9620}
+html[data-game="kinema"] input[type=range]::-moz-range-track{height:3px;background:#424a3b}
+html[data-game="kinema"] input[type=range]::-moz-range-progress{height:3px;background:#b9df95}
+html[data-game="kinema"] input[type=range]::-moz-range-thumb{width:9px;height:9px;background:#c8ef9e;border:0}
+html[data-game="kinema"] .range-marks{display:flex;justify-content:space-between;font-size:8px;line-height:1.4;color:#939c8a;margin-top:2px}
+html[data-game="kinema"] .anchor-settings{border-top:1px solid #343b2e;margin-top:14px;padding-top:13px}
+html[data-game="kinema"] .anchor-settings p,html[data-game="kinema"] .mode-note p{color:#929d89;font-size:10.5px;line-height:1.65;margin:6px 0 0;max-width:260px}
+html[data-game="kinema"] .mode-note{display:flex;align-items:flex-start;gap:10px;background:#21271d;padding:16px 17px 17px;margin-top:auto;min-height:78px;flex:0 0 auto}
+html[data-game="kinema"] .mode-icon{width:29px;height:29px;display:grid;place-items:center;color:var(--lime);background:#38462e;border:1px solid #48593a;border-radius:6px;flex-shrink:0}
+html[data-game="kinema"] .mode-note strong{display:block;font-size:11px;color:#c9d9bc;font-weight:600;line-height:1.4;margin-top:1px}
+html[data-game="kinema"] .mode-note p{font-size:10px;margin-top:4px;line-height:1.55;color:#a3af98}
+html[data-game="kinema"] .controls-strip{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:60px;padding:5px 1px}
+html[data-game="kinema"] .control-hints,html[data-game="kinema"] .control-hints>span,html[data-game="kinema"] .controls-strip>button{display:flex;align-items:center}
+html[data-game="kinema"] .control-hints{gap:16px}
+html[data-game="kinema"] .control-hints>span{color:#8e9887;font-size:10px;gap:7px}
+html[data-game="kinema"] .control-hints svg{color:#8e9a85}
+html[data-game="kinema"] .control-hints kbd{font:9px var(--mono);color:#bcc5b4;border:1px solid #353d2f;border-radius:3px;padding:2px 5px;background:#20251c;line-height:1.15}
+html[data-game="kinema"] .control-hints>i{height:11px;width:1px;background:#363d30}
+html[data-game="kinema"] .controls-strip>button{gap:8px;font-size:10.5px;color:#a5b09a;padding:6px 0}
+html[data-game="kinema"] .controls-strip>button:hover{color:var(--lime)}
+html[data-game="kinema"] .statusbar{height:30px;flex-shrink:0;border-top:1px solid #2b3126;padding:0 32px;display:flex;align-items:center;justify-content:space-between;gap:16px;background:#171a15;color:#899580;font-size:9px;letter-spacing:.1px}
+html[data-game="kinema"] .statusbar>div{display:flex;align-items:center;gap:9px}
+html[data-game="kinema"] .statusbar .status-dot{width:5px;height:5px;background:#a5c18d}
+html[data-game="kinema"] .status-divider{height:10px;margin:0 4px;background:#38402f}
+html[data-game="kinema"] .status-scene{max-width:300px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}
+html[data-game="kinema"] .engine-meta>i{width:2px;height:2px;background:#8c9882;border-radius:50%}
+html[data-game="kinema"] .webgl{display:flex;align-items:center;gap:6px}
+html[data-game="kinema"] .webgl>span{width:5px;height:5px;border:1px solid #8fa579;border-radius:1px}
+html[data-game="kinema"] .popover{position:absolute;z-index:20;padding:5px;background:#252b22;border:1px solid #48533f;box-shadow:0 8px 28px #0e120d60;border-radius:6px;min-width:130px;animation:kinema-menu-in .14s ease-out}
+html[data-game="kinema"] .popover>button{font-size:11px;padding:7px 8px;width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;border-radius:3px;color:#d8e0d0;text-align:left}
+html[data-game="kinema"] .popover>button:hover{background:#38432f;color:var(--lime)}
+html[data-game="kinema"] .popover>button>svg{color:var(--lime)}
+html[data-game="kinema"] .popover>small{display:block;padding:6px 8px;font:8px var(--mono);letter-spacing:1px;color:#9aaa8e}
+html[data-game="kinema"] .popover>button>span{font:10px var(--mono);color:#a5b69a}
+html[data-game="kinema"] .view-menu{left:0;top:calc(100% + 6px)}
+html[data-game="kinema"] .speed-menu{bottom:calc(100% + 13px);left:0;min-width:101px}
+html[data-game="kinema"] .planet-menu{left:0;top:calc(100% + 5px);min-width:148px}
+html[data-game="kinema"] .grab-indicator,html[data-game="kinema"] .loading-scene{position:absolute;left:50%;bottom:20px;transform:translateX(-50%);background:#232b1ee8;border:1px solid #64755788;border-radius:5px;display:flex;align-items:center;gap:8px;color:#d0e3c0;font-size:11px;padding:7px 11px;white-space:nowrap}
+html[data-game="kinema"] .loading-scene{bottom:auto;top:17px;font-size:10px}
+html[data-game="kinema"] .scene-error{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(88%,330px);display:flex;flex-direction:column;align-items:center;text-align:center;padding:20px;gap:9px;background:#1b2018f2;border:1px solid #4d5944;border-radius:9px;backdrop-filter:blur(12px)}
+html[data-game="kinema"] .scene-error>svg{color:var(--lime)}
+html[data-game="kinema"] .scene-error strong{font-size:15px}
+html[data-game="kinema"] .scene-error p{font-size:11px;color:#afbba4;line-height:1.6;margin:0 0 7px}
+html[data-game="kinema"] .spinner{animation:kinema-spin 1s linear infinite}
+html[data-game="kinema"] .viewport-frame:fullscreen,html[data-game="kinema"] .viewport-frame.expanded{border-radius:0;background:var(--bg)}
+html[data-game="kinema"] .viewport-frame.expanded:not(:fullscreen){position:fixed;z-index:80;inset:0;animation:none}
+html[data-game="kinema"] .viewport-frame:fullscreen .scene-area,html[data-game="kinema"] .viewport-frame.expanded .scene-area{flex:1}
+html[data-game="kinema"] .viewport-frame:fullscreen .viewport-header,html[data-game="kinema"] .viewport-frame.expanded .viewport-header{height:45px}
+html[data-game="kinema"] .toast{position:fixed;bottom:45px;left:50%;transform:translateX(-50%);z-index:130;background:#2b3425;border:1px solid #56674a;border-radius:7px;box-shadow:0 8px 25px #0004;color:#e7efdf;display:flex;align-items:center;gap:10px;padding:11px 13px;font-size:12px;max-width:calc(100vw - 30px);animation:kinema-toast-in .2s ease-out}
+html[data-game="kinema"] .toast>svg{color:var(--lime)}html[data-game="kinema"] .toast button{display:grid;place-items:center;color:#a9b69f;margin-left:8px}
+
+html[data-game="kinema"] .modal-backdrop{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#080b08a8;backdrop-filter:blur(7px);z-index:100;padding:20px;animation:kinema-section-in .16s ease}
+html[data-game="kinema"] .modal{width:100%;max-width:430px;max-height:calc(100dvh - 40px);overflow-y:auto;border:1px solid #49523f;border-radius:13px;padding:25px;background:#1d221b;box-shadow:0 24px 95px #0006;animation:kinema-modal-in .22s ease-out}
+html[data-game="kinema"] .modal.wide{max-width:555px}
+html[data-game="kinema"] .modal-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+html[data-game="kinema"] .modal-heading .icon-button{background:#2a3125;border:1px solid #3a4432;width:28px;height:28px}
+html[data-game="kinema"] .modal-heading .eyebrow{font-size:8px;letter-spacing:1.6px}
+html[data-game="kinema"] .modal-heading h2{font-size:24px;letter-spacing:-.85px;line-height:1.25;font-weight:700;margin:7px 0 0}
+html[data-game="kinema"] .modal-description{font-size:12px;line-height:1.8;color:#a4b09b;margin:15px 0 20px}
+html[data-game="kinema"] .input-label{display:block;font-size:11px;color:#c6d1bb;margin:0 0 7px;font-weight:600}
+html[data-game="kinema"] .text-input{background:#151a13;color:#e8efdf;border:1px solid #49583d;border-radius:5px;padding:10px 12px;width:100%;font-size:13px}
+html[data-game="kinema"] .text-input:focus{outline:1px solid #9ebf82;outline-offset:0}
+html[data-game="kinema"] .save-details{display:flex;align-items:center;gap:8px;font-size:9px;color:#92a087;margin:13px 0 0}
+html[data-game="kinema"] .save-details svg{color:#a8ba9a}
+html[data-game="kinema"] .modal-actions{display:flex;justify-content:flex-end;align-items:center;gap:9px;margin-top:23px}
+html[data-game="kinema"] .modal-actions .button{font-size:11px;min-height:35px}
+html[data-game="kinema"] .local-footnote{display:flex;align-items:center;gap:8px;border-top:1px solid var(--line);padding-top:15px;margin-top:20px;font-size:10px;color:#929f89}
+html[data-game="kinema"] .local-footnote .status-dot{width:4px;height:4px}
+html[data-game="kinema"] .form-error{font-size:11px;color:#efb4a0;margin-top:12px}
+html[data-game="kinema"] .library-empty{display:flex;flex-direction:column;align-items:center;text-align:center;padding:27px 0 18px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+html[data-game="kinema"] .library-empty>svg{color:#afc697;margin-bottom:10px}
+html[data-game="kinema"] .library-empty h3{font-size:16px;font-weight:600;letter-spacing:-.3px;margin:4px 0}
+html[data-game="kinema"] .library-empty p{font-size:11px;color:#a5b09c;line-height:1.6;max-width:290px;margin:5px 0 8px}
+html[data-game="kinema"] .saved-list{display:flex;flex-direction:column;gap:7px;max-height:48dvh;overflow-y:auto}
+html[data-game="kinema"] .saved-item{display:flex;align-items:center;gap:5px;padding:6px;border:1px solid #394332;border-radius:6px;background:#22291e}
+html[data-game="kinema"] .saved-open{flex:1;min-width:0;display:flex;align-items:center;gap:12px;text-align:left}
+html[data-game="kinema"] .saved-open>span{display:flex;flex-direction:column;gap:5px;min-width:0}
+html[data-game="kinema"] .saved-open>img{width:72px;height:54px;object-fit:cover;border-radius:3px}
+html[data-game="kinema"] .saved-open strong{font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html[data-game="kinema"] .saved-open small{font:9px var(--mono);color:#a2ad99}
+html[data-game="kinema"] .saved-open>svg{color:#bbd5a7;margin-left:auto;margin-right:5px}
+html[data-game="kinema"] .saved-open:hover strong{color:var(--lime)}
+html[data-game="kinema"] .delete-confirm{display:flex;align-items:center;gap:5px;font-size:10px;color:#e6b6a8}
+html[data-game="kinema"] .model-detail{display:flex;align-items:center;gap:17px;margin:23px 0 0}
+html[data-game="kinema"] .model-detail>img{width:90px;height:98px;object-fit:cover;border-radius:7px;border:1px solid #555f49}
+html[data-game="kinema"] .model-detail h3{font-size:31px;letter-spacing:-1.5px;margin:3px 0 0;font-weight:600}
+html[data-game="kinema"] .model-detail h3 span{font-size:15px;color:#9cac90;letter-spacing:0;font-weight:400}
+html[data-game="kinema"] .model-detail p{font-size:11px;color:#a2ae99;margin:4px 0 0}
+html[data-game="kinema"] .detail-row,html[data-game="kinema"] .shortcut-list>div{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid #343d2e;font-size:11px;color:#aeba9f}
+html[data-game="kinema"] .detail-row b{font:10px var(--mono);color:#d3dfc8}
+html[data-game="kinema"] .guide-tabs{display:flex;gap:16px;border-bottom:1px solid #394331;margin:17px 0 6px}
+html[data-game="kinema"] .guide-tabs>button{display:flex;align-items:center;gap:7px;font-size:12px;padding:8px 2px 10px;border-bottom:2px solid transparent;color:#9ba78f}
+html[data-game="kinema"] .guide-tabs>button.active{color:var(--lime);border-bottom-color:var(--lime)}
+html[data-game="kinema"] .shortcut-list>div{font-size:11px;color:#c8d3be;padding:8px 0}
+html[data-game="kinema"] .shortcut-list kbd{font:9px var(--mono);border:1px solid #414d37;border-bottom-width:2px;background:#252d21;border-radius:4px;padding:3px 6px;white-space:nowrap;color:#b6c4a8}
+html[data-game="kinema"] .guide-note{display:flex;align-items:flex-start;gap:9px;font-size:10px;line-height:1.7;color:#a5b29a;margin:15px 0 0}
+html[data-game="kinema"] .guide-note svg{margin-top:2px;color:#b4d397}
+html[data-game="kinema"] .physics-guide h3{display:flex;align-items:center;gap:8px;font-weight:600;font-size:13px;color:#d8e6cd;margin:17px 0 5px}
+html[data-game="kinema"] .physics-guide h3 svg{color:var(--lime)}
+html[data-game="kinema"] .physics-guide p{font-size:11.5px;line-height:1.8;color:#a6b29c;margin:0}
+
+@keyframes kinema-arrive{from{transform:translateY(8px);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes kinema-caption-in{from{transform:translateY(7px);opacity:0}to{transform:translateY(0);opacity:1}}
+@keyframes kinema-heartbeat{0%,75%,100%{opacity:1}87%{opacity:.45}}
+@keyframes kinema-spin{to{transform:rotate(360deg)}}
+@keyframes kinema-menu-in{from{opacity:0;translate:0 -3px}to{opacity:1;translate:0 0}}
+@keyframes kinema-modal-in{from{opacity:0;transform:translateY(9px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes kinema-section-in{from{opacity:0}to{opacity:1}}
+@keyframes kinema-toast-in{from{opacity:0;translate:0 6px}to{opacity:1;translate:0 0}}
+
+@media(min-width:1600px){html[data-game="kinema"] .workspace-main{padding:37px 40px 0}html[data-game="kinema"] .topbar{padding:0 40px}html[data-game="kinema"] .workspace-grid{height:calc(100dvh - 306px);gap:22px}html[data-game="kinema"] .page-heading{margin-bottom:28px}html[data-game="kinema"] .inspector-section,html[data-game="kinema"] .inspector-header{padding-left:23px;padding-right:23px}html[data-game="kinema"] .character-section{padding:22px 23px}html[data-game="kinema"] .section-heading{padding-top:21px}html[data-game="kinema"] .section-content{padding-top:16px;padding-bottom:21px}html[data-game="kinema"] .setting-row{font-size:13px}html[data-game="kinema"] .mode-note{padding:20px}html[data-game="kinema"] .mode-note p,html[data-game="kinema"] .anchor-settings p{font-size:11px}html[data-game="kinema"] .statusbar{padding:0 40px}html[data-game="kinema"] .character-caption{bottom:30px;left:30px}}
+@media(min-width:1000px) and (max-height:790px){html[data-game="kinema"] .workspace-main{padding-top:21px}html[data-game="kinema"] .page-heading{margin-bottom:20px}html[data-game="kinema"] .topbar{height:58px}html[data-game="kinema"] .page-heading h1{font-size:29px}html[data-game="kinema"] .workspace-grid{height:max(516px,calc(100dvh - 240px))}html[data-game="kinema"] .controls-strip{min-height:48px}html[data-game="kinema"] .character-section{padding-top:13px;padding-bottom:13px}html[data-game="kinema"] .section-heading{padding-top:13px}html[data-game="kinema"] .section-content{padding-top:11px;padding-bottom:12px}html[data-game="kinema"] .anchor-settings{margin-top:10px;padding-top:10px}html[data-game="kinema"] .mode-note{padding-top:12px;padding-bottom:12px;min-height:66px}html[data-game="kinema"] .viewport-header,html[data-game="kinema"] .inspector-header{height:39px}html[data-game="kinema"] .transport{min-height:52px}html[data-game="kinema"] .model-avatar{width:41px;height:43px}html[data-game="kinema"] .character-name{font-size:35px}html[data-game="kinema"] .character-caption{bottom:18px}html[data-game="kinema"] .scene-tools{transform:translateY(-53%)}}
+@media(max-width:1150px){html[data-game="kinema"] .topbar{padding:0 22px;gap:18px}html[data-game="kinema"] .workspace-main{padding-left:22px;padding-right:22px}html[data-game="kinema"] .workspace-grid{grid-template-columns:minmax(0,1fr) 267px;gap:13px}html[data-game="kinema"] .header-meta{gap:12px}html[data-game="kinema"] .inspector-section{padding-left:16px;padding-right:16px}html[data-game="kinema"] .character-section{padding-left:16px;padding-right:16px}html[data-game="kinema"] .inspector-header{padding:0 16px}html[data-game="kinema"] .transport-state{font-size:9px;gap:5px}html[data-game="kinema"] .transport{gap:7px;padding-left:11px;padding-right:11px}html[data-game="kinema"] .page-heading p{font-size:12px}html[data-game="kinema"] .control-hints{gap:10px}html[data-game="kinema"] .statusbar{padding:0 22px}html[data-game="kinema"] .heading-actions{gap:12px}}
+@media(max-width:900px){html[data-game="kinema"] .workspace-grid{grid-template-columns:minmax(0,1fr) 245px;gap:11px}html[data-game="kinema"] .local-status{display:none}html[data-game="kinema"] .inspector-section,html[data-game="kinema"] .inspector-header,html[data-game="kinema"] .character-section{padding-left:13px;padding-right:13px}html[data-game="kinema"] .character-section{padding-top:15px;padding-bottom:15px}html[data-game="kinema"] .panel-number{font-size:7px}html[data-game="kinema"] .mode-note{padding-left:12px;padding-right:12px;gap:8px}html[data-game="kinema"] .transport-state{display:none}html[data-game="kinema"] .topbar{gap:13px;padding:0 18px}html[data-game="kinema"] .main-nav button{padding:0 10px;font-size:12px}html[data-game="kinema"] .workspace-main{padding:22px 18px 0}html[data-game="kinema"] .page-heading{margin-bottom:20px;gap:12px}html[data-game="kinema"] .heading-actions{gap:10px}html[data-game="kinema"] .quiet-action span{display:none}html[data-game="kinema"] .save-top{min-height:33px;font-size:11px;padding:8px 10px}html[data-game="kinema"] .page-heading h1{font-size:28px}html[data-game="kinema"] .page-heading p{font-size:11px}html[data-game="kinema"] .brand{font-size:26px}html[data-game="kinema"] .brand-mark{width:25px}html[data-game="kinema"] .model-avatar{width:41px;height:44px}html[data-game="kinema"] .anchor-settings p{font-size:10px}html[data-game="kinema"] .control-hints{gap:9px}html[data-game="kinema"] .control-hints>span{gap:5px;font-size:9px}html[data-game="kinema"] .controls-strip>button{font-size:10px}html[data-game="kinema"] .workspace-grid{height:max(540px,calc(100dvh - 259px))}html[data-game="kinema"] .character-caption{left:17px;bottom:18px}html[data-game="kinema"] .scene-tools{left:12px}html[data-game="kinema"] .view-pick{left:12px}html[data-game="kinema"] .viewport-header{padding:0 12px}html[data-game="kinema"] .viewport-health{gap:9px}html[data-game="kinema"] .viewport-title{font-size:11px;gap:7px}html[data-game="kinema"] .statusbar{padding:0 18px}}
+@media(max-width:735px){html[data-game="kinema"] .topbar{height:58px}html[data-game="kinema"] .header-meta{gap:8px}html[data-game="kinema"] .version{display:none}html[data-game="kinema"] .meta-rule{display:none}html[data-game="kinema"] .nav-divider{margin:0}html[data-game="kinema"] .brand b{font-size:8px}html[data-game="kinema"] .topbar{gap:13px}html[data-game="kinema"] .main-nav{gap:0}html[data-game="kinema"] .main-nav button{font-size:11px;gap:6px;padding:0 8px}html[data-game="kinema"] .main-nav svg{width:14px;height:14px}html[data-game="kinema"] .main-nav button.active:after{left:7px;right:7px}html[data-game="kinema"] .workspace-main{padding:23px 16px 0}html[data-game="kinema"] .page-heading{align-items:flex-end;margin-bottom:17px}html[data-game="kinema"] .page-heading p{max-width:330px;font-size:11px;line-height:1.6}html[data-game="kinema"] .page-heading h1{font-size:28px}html[data-game="kinema"] .eyebrow{font-size:8px;letter-spacing:1.6px}html[data-game="kinema"] .heading-actions{margin-top:0;margin-bottom:3px;gap:7px}html[data-game="kinema"] .save-top span{display:none}html[data-game="kinema"] .save-top{width:33px;height:33px;padding:0}html[data-game="kinema"] .quiet-action{width:30px;height:32px}html[data-game="kinema"] .workspace-grid{height:auto;max-height:none;display:flex;flex-direction:column;gap:14px}html[data-game="kinema"] .viewport-frame{height:clamp(440px,64dvh,650px);flex-shrink:0}html[data-game="kinema"] .viewport-header,html[data-game="kinema"] .inspector-header{height:40px}html[data-game="kinema"] .scene-tools{top:46%}html[data-game="kinema"] .scene-area{min-height:285px}html[data-game="kinema"] .transport-state{display:flex}html[data-game="kinema"] .transport{min-height:53px;gap:10px;padding:9px 13px}html[data-game="kinema"] .inspector{display:grid;grid-template-columns:1fr 1fr;overflow:visible}html[data-game="kinema"] .inspector-header{grid-column:1/-1;grid-row:1;border-radius:10px 10px 0 0;padding:0 16px}html[data-game="kinema"] .character-section{grid-column:1;grid-row:2;padding:15px 16px;border-right:1px solid var(--line)}html[data-game="kinema"] .inspector-section:nth-of-type(1){grid-column:2;grid-row:2 / 4;border-bottom:0;padding:0 16px}html[data-game="kinema"] .inspector-section:nth-of-type(2){grid-column:1;grid-row:3;border-right:1px solid var(--line);border-bottom:0;padding:0 16px}html[data-game="kinema"] .mode-note{grid-column:1/-1;grid-row:4;border-top:1px solid var(--line);border-radius:0 0 9px 9px;min-height:0;padding:12px 16px;align-items:center}html[data-game="kinema"] .mode-note p{max-width:none}html[data-game="kinema"] .section-heading{padding-top:14px}html[data-game="kinema"] .section-content{padding-top:12px;padding-bottom:14px}html[data-game="kinema"] .controls-strip{min-height:56px}html[data-game="kinema"] .control-hints>span{font-size:0;gap:5px}html[data-game="kinema"] .control-hints svg{display:none}html[data-game="kinema"] .control-hints>i{display:none}html[data-game="kinema"] .control-hints>span:nth-child(1):after{content:'Захват';font-size:9px}html[data-game="kinema"] .control-hints>span:nth-child(3):after{content:'Обзор';font-size:9px}html[data-game="kinema"] .control-hints>span:nth-child(5):after{content:'Зум';font-size:9px}html[data-game="kinema"] .control-hints>span:nth-child(1) svg{display:none}html[data-game="kinema"] .controls-strip>button{gap:5px}html[data-game="kinema"] .statusbar{font-size:8px;padding:0 16px}html[data-game="kinema"] .statusbar>div{gap:6px}html[data-game="kinema"] .character-name{font-size:35px}html[data-game="kinema"] .viewport-frame.expanded,html[data-game="kinema"] .viewport-frame:fullscreen{height:100dvh}html[data-game="kinema"] .viewport-frame.expanded .scene-area{min-height:0}html[data-game="kinema"] .axis-gizmo{width:53px;right:7px;top:8px}}
+@media(max-width:470px){html[data-game="kinema"] .topbar{padding:0 14px;gap:11px}html[data-game="kinema"] .brand{gap:6px;font-size:25px}html[data-game="kinema"] .brand-mark{width:23px;height:27px}html[data-game="kinema"] .brand b{display:none}html[data-game="kinema"] .nav-divider{height:19px}html[data-game="kinema"] .main-nav button{padding:0 7px;font-size:11px}html[data-game="kinema"] .header-meta .icon-button{width:22px}html[data-game="kinema"] .main-nav svg{display:none}html[data-game="kinema"] .workspace-main{padding:19px 12px 0}html[data-game="kinema"] .page-heading{gap:7px}html[data-game="kinema"] .page-heading h1{font-size:26px;letter-spacing:-1.15px;margin:5px 0}html[data-game="kinema"] .page-heading p{max-width:265px;font-size:10px}html[data-game="kinema"] .heading-actions{gap:1px}html[data-game="kinema"] .quiet-action{width:26px}html[data-game="kinema"] .save-top{width:30px;min-height:29px;height:29px}html[data-game="kinema"] .viewport-frame{height:clamp(420px,59dvh,550px)}html[data-game="kinema"] .scene-tools{padding:3px;left:10px;border-radius:6px}html[data-game="kinema"] .scene-tools>button{height:29px;width:28px}html[data-game="kinema"] .scene-tools>button>svg{height:16px}html[data-game="kinema"] .character-caption{left:14px;bottom:16px}html[data-game="kinema"] .caption-kicker{font-size:6px;letter-spacing:1.1px}html[data-game="kinema"] .character-name{font-size:29px;gap:7px;letter-spacing:-1.6px}html[data-game="kinema"] .character-name>span{font-size:12px}html[data-game="kinema"] .caption-sub{font-size:7px}html[data-game="kinema"] .view-pick{left:10px;top:12px}html[data-game="kinema"] .view-button{font-size:9px;height:25px;padding:0 8px}html[data-game="kinema"] .transport-state{font-size:0;gap:0}html[data-game="kinema"] .transport-state .status-dot{height:6px;width:6px}html[data-game="kinema"] .play-button{min-width:75px;font-size:11px}html[data-game="kinema"] .transport{gap:8px}html[data-game="kinema"] .timecode{font-size:11px}html[data-game="kinema"] .scene-tools .tool-tip{display:none}html[data-game="kinema"] .character-section{padding:13px 11px}html[data-game="kinema"] .inspector-section:nth-of-type(1),html[data-game="kinema"] .inspector-section:nth-of-type(2){padding:0 11px}html[data-game="kinema"] .inspector{grid-template-columns:.92fr 1.08fr}html[data-game="kinema"] .model-select{gap:7px}html[data-game="kinema"] .model-select>svg{width:11px}html[data-game="kinema"] .model-avatar{width:34px;height:39px}html[data-game="kinema"] .model-info strong{font-size:15px}html[data-game="kinema"] .model-info>span{font-size:8px;gap:4px}html[data-game="kinema"] .micro-label{font-size:6.5px;letter-spacing:1px}html[data-game="kinema"] .setting-row{font-size:10px;gap:5px}html[data-game="kinema"] .setting-with-icon{gap:5px}html[data-game="kinema"] .setting-with-icon svg{width:11px;height:11px}html[data-game="kinema"] .section-heading>span{font-size:11px;gap:6px}html[data-game="kinema"] .section-heading>span>svg{width:13px}html[data-game="kinema"] .toggle{width:25px;height:14px}html[data-game="kinema"] .toggle>span{width:8px;height:8px}html[data-game="kinema"] .toggle.on>span{transform:translateX(11px)}html[data-game="kinema"] .anchor-settings p{font-size:9px}html[data-game="kinema"] .gravity-number{font-size:9px}html[data-game="kinema"] .gravity-number small{font-size:8px}html[data-game="kinema"] .range-marks{font-size:7px}html[data-game="kinema"] .planet-pick>button{font-size:9px}html[data-game="kinema"] .controls-strip{gap:5px;min-height:48px}html[data-game="kinema"] .controls-strip>button{font-size:9px}html[data-game="kinema"] .control-hints{gap:6px}html[data-game="kinema"] .control-hints kbd{font-size:8px;padding:2px 3px}html[data-game="kinema"] .controls-strip>button>svg:first-child{display:none}html[data-game="kinema"] .engine-meta>span:first-child,html[data-game="kinema"] .engine-meta>i{display:none}html[data-game="kinema"] .statusbar{padding:0 12px;font-size:7px}html[data-game="kinema"] .status-scene{max-width:120px}html[data-game="kinema"] .status-divider{margin:0 2px}html[data-game="kinema"] .modal-backdrop{padding:12px}html[data-game="kinema"] .modal{padding:21px 18px;max-height:calc(100dvh - 24px)}html[data-game="kinema"] .modal-heading h2{font-size:22px}html[data-game="kinema"] .shortcut-list>div{font-size:10px;gap:6px}html[data-game="kinema"] .shortcut-list kbd{font-size:8px}html[data-game="kinema"] .toast{font-size:10px;width:max-content;bottom:24px}html[data-game="kinema"] .saved-open>img{width:53px;height:47px}html[data-game="kinema"] .saved-open{gap:8px}}
+@media(prefers-reduced-motion:reduce){html[data-game="kinema"] *,html[data-game="kinema"] *:before,html[data-game="kinema"] *:after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}
+html[data-game="kinema"] .offline-downloads{margin-top:21px;border-top:1px solid var(--line);padding-top:16px}
+html[data-game="kinema"] .offline-downloads strong{font-size:12px;font-weight:600;color:#dae5d0}
+html[data-game="kinema"] .offline-downloads p{font-size:10px;color:#a1ae96;line-height:1.6;margin:4px 0 12px}
+html[data-game="kinema"] .offline-downloads>div:last-child{display:flex;align-items:center;gap:16px}
+html[data-game="kinema"] .offline-downloads .button{min-height:32px;font-size:10px;padding:7px 10px}
+html[data-game="kinema"] .source-download{display:inline-flex;align-items:center;gap:6px;font-size:10px;color:#b5c6a6}
+html[data-game="kinema"] .source-download:hover{color:var(--lime)}
+@media(min-width:736px){html[data-game="kinema"] .app-shell{height:100dvh;min-height:720px}html[data-game="kinema"] .workspace-main{display:flex;flex-direction:column;min-height:0}html[data-game="kinema"] .workspace-grid{height:0;min-height:0;flex:1}html[data-game="kinema"] .page-heading,html[data-game="kinema"] .controls-strip{flex-shrink:0}}
+@media(min-width:1151px){html[data-game="kinema"] .setting-row{font-size:12.5px}html[data-game="kinema"] .model-info>span{font-size:10.5px}html[data-game="kinema"] .mode-note p{font-size:10.5px}html[data-game="kinema"] .viewport-title{font-size:12.5px}}
+
+html[data-game="kinema"] .back-to-theatre{color:#d8c19d;font-size:11px}html[data-game="kinema"] .brand>span{letter-spacing:-1.65px;font-size:29px}html[data-game="kinema"] .version{white-space:nowrap}
+@media(max-width:480px){html[data-game="kinema"] .topbar{gap:8px}html[data-game="kinema"] .brand>span{font-size:23px}html[data-game="kinema"] .back-to-theatre{font-size:8px}html[data-game="kinema"] .header-meta .version{display:inline-block;font-size:6px;padding:2px 3px}html[data-game="kinema"] .header-meta{gap:4px}}

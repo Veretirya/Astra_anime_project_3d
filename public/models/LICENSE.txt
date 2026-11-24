@@ -1,0 +1,19 @@
+Mika character for Kinema Lab
+
+Base human mesh, rig, facial expressions, source garments, and source textures:
+VRoid Project, HairSample_Female from VRoid Studio 0.14.0.
+The source VRM explicitly declares licenseName: CC0.
+
+Source archive:
+https://opengameart.org/sites/default/files/hairsample_female.zip
+Collection and license information:
+https://opengameart.org/content/vroid-studio-cc0-models
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Modifications for this application include a layered rose hairstyle, recolored
+eyes and skin shading, tailored open vest, fitted cotton wrap, pleated skirt,
+waist sash, sculpted leg warmers, hairpins, optimized geometry and textures.
+The new model geometry and textures are also released under CC0-1.0.
+
+The screenshot and portrait are renders of the bundled 3D model, not substitutes
+for interactive geometry. No reference artwork is embedded in the model.

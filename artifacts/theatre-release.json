@@ -1,0 +1,16 @@
+{
+  "version": "1.4.1",
+  "filename": "MIKA-DUO-1.4.1.html",
+  "localAvatarWithoutServer": "passed",
+  "modelRevision": "MIKA-R12",
+  "modelSha256": "2d513b1374cb9b2a1dd1e2841b53ccf2c620f9911ec34b1b550e926b2b82877f",
+  "production": "passed",
+  "mobileOperation": "passed",
+  "bothGamesInOneFile": "passed",
+  "studioFirstExport": "passed",
+  "legacyGzipFallback": "passed",
+  "offline": "passed",
+  "externalRequests": 0,
+  "extraAssetRequests": [],
+  "exceptions": []
+}

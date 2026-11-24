@@ -1,0 +1,18 @@
+{
+  "passed": [
+    "Embedded original Mika, 18 rigid bodies, 17 joints, seven tools, viewport fit",
+    "Atlas, numeric shortcuts, contextual E pickup, and Q release",
+    "Four distinct anatomical views with bone-attached organ models",
+    "Actual pointer limb grab, release, table anchoring, and gravity contacts",
+    "First scenario completes with real task progress and visible dressing",
+    "Mismatched instrument fails the quest while the sandbox remains playable",
+    "Second scenario uses the clamp and moves the fragment onto the tray",
+    "Advanced six-stage scenario, infusion controller, cassette, and completion",
+    "First-person walking, touch arrows, pause, and correct sandbox resume",
+    "Local results persistence, journal export, and saved preferences",
+    "Fullscreen, keyboard-accessible dialogs and guide",
+    "Mobile touch-only completion, visible start control, and no horizontal overflow"
+  ],
+  "errors": [],
+  "badResponses": []
+}

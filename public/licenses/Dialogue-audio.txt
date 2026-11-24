@@ -1,0 +1,10 @@
+MIKA DUO: original game dialogue, release 1.4.
+
+The two included MP3 files are locally synthesized performances of the game's
+Russian dialogue. They do not require a speech service or a system voice.
+Synthesis: Piper, ru_RU-dmitri-medium; pitch, timbre and level adjusted for the
+fictional character. No voice recordings or neural model weights are included.
+Voice model card and source-data attribution:
+https://huggingface.co/rhasspy/piper-voices/tree/main/ru/ru_RU/dmitri/medium
+https://github.com/OHF-Voice/voice-datasets
+The model card identifies its training dataset as CC0.

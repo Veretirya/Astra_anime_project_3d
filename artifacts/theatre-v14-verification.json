@@ -1,0 +1,28 @@
+{
+  "version": "1.4.0",
+  "passed": [
+    "Operating-table foot spacing stays bounded, a held leg follows a grab, release recenters, sandbox has no guides",
+    "Orbit failure: open eyes, smile, exact spoken subtitle, local audio playback, camera fall and one saved result",
+    "First-person failure and Escape skip restore the same camera position and field of view",
+    "Comfort mode keeps the dialogue and gestures but avoids the roll and floor drop",
+    "Hidden handling threshold: ordinary contact is safe, rough repeated dragging triggers the second line once, no fake surgical result",
+    "Verified local GLB import and transactional rejection of static, incomplete, and remote models",
+    "Mixamo-named glTF + external BIN and image: successful operation, shared Kinema character, standalone glTF export, restore original Mika",
+    "Touch-only skip and automatic OS reduced-motion preference"
+  ],
+  "measurements": {
+    "legs": {
+      "initial": 0.21573040521546538,
+      "max": 0.2184544574809311,
+      "finite": true,
+      "lifted": 0.2119191112119973,
+      "returned": 0.21330172518940738,
+      "free": true
+    },
+    "fall": {
+      "height": 0.08499999999999996,
+      "tilt": -1.4398315452782606
+    }
+  },
+  "errors": []
+}

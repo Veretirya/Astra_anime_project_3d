@@ -1,0 +1,59 @@
+{
+  "version": "1.4.0",
+  "cases": [
+    {
+      "name": "left",
+      "gazeErrorDegrees": 38.57,
+      "eyes": [
+        -0.01,
+        1.09,
+        -0.61
+      ]
+    },
+    {
+      "name": "right",
+      "gazeErrorDegrees": 82.36,
+      "eyes": [
+        -0.01,
+        1.09,
+        -0.61
+      ]
+    },
+    {
+      "name": "head",
+      "gazeErrorDegrees": 74.55,
+      "eyes": [
+        -0.01,
+        1.09,
+        -0.61
+      ]
+    },
+    {
+      "name": "feet",
+      "gazeErrorDegrees": 51.49,
+      "eyes": [
+        -0.01,
+        1.09,
+        -0.61
+      ]
+    },
+    {
+      "name": "walk",
+      "gazeErrorDegrees": 72.41,
+      "eyes": [
+        -0.01,
+        1.09,
+        -0.61
+      ]
+    },
+    {
+      "name": "above",
+      "gazeErrorDegrees": 25.09,
+      "eyes": [
+        -0.01,
+        1.09,
+        -0.61
+      ]
+    }
+  ]
+}

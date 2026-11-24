@@ -1,0 +1,16 @@
+{
+  "build": "1.2.0",
+  "geometry": {
+    "padGapCovered": 0.007500000000000062,
+    "touchTargetGap": 0.02573875272659243,
+    "extracted": true,
+    "centerY": 1.0707505999600002,
+    "visibleFieldInPickList": false,
+    "stoneInPickList": false
+  },
+  "afterBandageOnExtractedFragment": {
+    "phase": "running",
+    "mark": "pad",
+    "saved": null
+  }
+}

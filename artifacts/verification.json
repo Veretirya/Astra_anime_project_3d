@@ -1,0 +1,18 @@
+{
+  "passed": [
+    "Local GLB, 18 rigid bodies, 17 joints, bounded elbows and knees",
+    "Skeleton and floor grid are real, independently toggleable scene objects",
+    "Planet presets and zero gravity update the physics world",
+    "Pointer picking creates and releases a physical limb constraint",
+    "Released limbs retain throw velocity in zero gravity",
+    "Earth gravity, floor contacts, and bounded ragdoll remain stable",
+    "Unlocked whole-body floor translation changes the model coordinates",
+    "Pause, exact single-frame stepping, and playback speed",
+    "Rear view and continuous orbit rotate the actual 3D camera",
+    "Named local saves restore exact pose, velocities, settings, camera and time",
+    "GLB model export and camera snapshot download",
+    "Fullscreen, contextual guide, keyboard dismissal and focus handling",
+    "Mobile layout, library deletion, and no runtime exceptions"
+  ],
+  "errors": []
+}

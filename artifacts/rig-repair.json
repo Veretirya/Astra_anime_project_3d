@@ -1,0 +1,63 @@
+{
+  "build": "1.2.0",
+  "modelSha256": "2d513b1374cb9b2a1dd1e2841b53ccf2c620f9911ec34b1b550e926b2b82877f",
+  "bodyTriangles": 8644,
+  "samples": [
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.93
+  ],
+  "sections": [
+    48,
+    52,
+    58,
+    60,
+    56
+  ],
+  "maxWeightError": 7.636845111846924e-8,
+  "trials": [
+    {
+      "game": "theatre",
+      "anchored": true,
+      "maxGap": 7.575797802392803e-16,
+      "maxAngleViolation": 2.220446049250313e-16,
+      "maxFloorPenetration": 0,
+      "maxAtRestSpeed": 0,
+      "maxTrackingError": 0.17478408785371993,
+      "valid": true
+    },
+    {
+      "game": "theatre",
+      "anchored": false,
+      "maxGap": 1.263412338830099e-15,
+      "maxAngleViolation": 4.440892098500626e-16,
+      "maxFloorPenetration": 0,
+      "maxAtRestSpeed": 1.0315872466567846,
+      "maxTrackingError": 0.14617095305033123,
+      "valid": true
+    },
+    {
+      "game": "kinema",
+      "anchored": true,
+      "maxGap": 1.5192216577424321e-15,
+      "maxAngleViolation": 0.00031937202368141003,
+      "maxFloorPenetration": 0,
+      "maxAtRestSpeed": 0,
+      "maxTrackingError": 0.16539398987167717,
+      "valid": true
+    },
+    {
+      "game": "kinema",
+      "anchored": false,
+      "maxGap": 2.6507418034245067e-8,
+      "maxAngleViolation": 0.000005709456299463067,
+      "maxFloorPenetration": 0,
+      "maxAtRestSpeed": 1.1577149823528872,
+      "maxTrackingError": 0.1308610334554114,
+      "valid": true
+    }
+  ],
+  "exceptions": []
+}

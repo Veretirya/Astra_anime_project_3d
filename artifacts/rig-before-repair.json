@@ -1,0 +1,107 @@
+{
+  "initial": {
+    "L_UpperArm": 0.0068,
+    "L_LowerArm": 0.0061,
+    "L_Hand": 0.079,
+    "R_UpperArm": 0.0018,
+    "R_LowerArm": 0.0191,
+    "R_Hand": 0.066
+  },
+  "twistsBefore": [
+    [
+      "C_Spine",
+      0,
+      0.36
+    ],
+    [
+      "C_Chest",
+      0,
+      0.36
+    ],
+    [
+      "C_UpperChest",
+      0,
+      0.36
+    ],
+    [
+      "C_Neck",
+      0.04,
+      0.36
+    ],
+    [
+      "C_Head",
+      0.33,
+      0.36
+    ],
+    [
+      "L_UpperArm",
+      0.65,
+      0.36
+    ],
+    [
+      "L_Hand",
+      0.59,
+      0.36
+    ],
+    [
+      "L_UpperLeg",
+      0.35,
+      0.36
+    ],
+    [
+      "L_Foot",
+      0.35,
+      0.36
+    ],
+    [
+      "R_UpperArm",
+      0.78,
+      0.36
+    ],
+    [
+      "R_Hand",
+      0.74,
+      0.36
+    ],
+    [
+      "R_UpperLeg",
+      0.33,
+      0.36
+    ],
+    [
+      "R_Foot",
+      0.35,
+      0.36
+    ]
+  ],
+  "frames": [
+    {
+      "anchored": true,
+      "jointGap": 0.3471,
+      "elbowOvershoot": 0.1666698964707649,
+      "restSpin": 21.000000000000007,
+      "end": {
+        "L_UpperArm": 0.0284,
+        "L_LowerArm": 0.0901,
+        "L_Hand": 0.1564,
+        "R_UpperArm": 0.0118,
+        "R_LowerArm": 0.0114,
+        "R_Hand": 0.0892
+      }
+    },
+    {
+      "anchored": false,
+      "jointGap": 0.1035,
+      "elbowOvershoot": 0.5281458472502184,
+      "restSpin": 21.000000000000007,
+      "end": {
+        "L_UpperArm": 0.0055,
+        "L_LowerArm": 0.0095,
+        "L_Hand": 0.0267,
+        "R_UpperArm": 0.0125,
+        "R_LowerArm": 0.0077,
+        "R_Hand": 0.0231
+      }
+    }
+  ]
+}

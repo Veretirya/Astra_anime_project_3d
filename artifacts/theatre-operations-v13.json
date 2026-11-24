@@ -1,0 +1,44 @@
+{
+  "passed": [
+    "First case entirely through the canvas: three ordered pairs, no duplicate credit, dressing, exactly one result",
+    "Reproduction fixed: extraction to the cup, helpful tray click, bandage on the original site, 4/4 report",
+    "Third case: visible packet mounting, flow and pause, guided stroke, extraction, three pairs, final report",
+    "Free exercise has a clear finish and reset, without a fictitious scored operation",
+    "Touch-only fragment case: visible targets and real canvas taps through to completion"
+  ],
+  "geometry": [
+    {
+      "name": "forearm with drape",
+      "offsetMm": 0.350029391190316,
+      "boundVertices": 77,
+      "surfaces": [
+        "Mika_Body"
+      ]
+    },
+    {
+      "name": "uncovered skinned forearm",
+      "offsetMm": 0.35003133353152666,
+      "boundVertices": 77,
+      "surfaces": [
+        "Mika_Body"
+      ]
+    },
+    {
+      "name": "conforming final dressing",
+      "offsetMm": 0.35003133353152666,
+      "boundVertices": 77,
+      "surfaces": [
+        "Mika_Body"
+      ]
+    },
+    {
+      "name": "fragment field on cloth",
+      "offsetMm": 0.35005706104854395,
+      "boundVertices": 77,
+      "surfaces": [
+        "Sterile surgical drape"
+      ]
+    }
+  ],
+  "errors": []
+}

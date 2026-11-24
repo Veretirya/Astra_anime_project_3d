@@ -1,0 +1,11 @@
+{
+  "production": "passed",
+  "offlineFile": "passed",
+  "missingModelRoute": "passed",
+  "mobileTouch": "passed",
+  "externalStartupAssets": [],
+  "exportedModelSha256": "be99aa166234e25d415e5d10e9c821f477cc7eacf8ddb231809f64a0e0454ad7",
+  "remoteRequests": 0,
+  "exceptions": [],
+  "failedAssets": []
+}
